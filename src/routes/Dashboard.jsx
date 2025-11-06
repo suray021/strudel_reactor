@@ -39,6 +39,18 @@ export default function Dashboard() {
         play();
     };
 
+    useEffect(() => {
+        const saved = localStorage.getItem("controls");
+        if (saved) {
+            try { setControls(JSON.parse(saved)); } catch { }
+        }
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem("controls", JSON.stringify(controls));
+    }, [controls]);
+
+
     return (
         <div>
             <h2>Dashboard</h2>
