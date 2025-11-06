@@ -82,65 +82,87 @@ export default function Dashboard() {
 
                         <div className="card mt-3">
                             <div className="card-header">Controls</div>
-                            <div className="card-body d-flex flex-column gap-3">
-                                {/* P1 radio */}
-                                <div>
-                                    <label className="form-label me-2 mb-1">P1</label>
-                                    <div className="btn-group" role="group" aria-label="p1 radio">
-                                        <input
-                                            type="radio"
-                                            className="btn-check"
-                                            name="p1"
-                                            id="p1on"
-                                            checked={controls.p1 === "on"}
-                                            onChange={() => setControls((c) => ({ ...c, p1: "on" }))}
-                                        />
-                                        <label className="btn btn-outline-primary" htmlFor="p1on">On</label>
+                            <div className="card-body">
 
-                                        <input
-                                            type="radio"
-                                            className="btn-check"
-                                            name="p1"
-                                            id="p1hush"
-                                            checked={controls.p1 === "hush"}
-                                            onChange={() => setControls((c) => ({ ...c, p1: "hush" }))}
-                                        />
-                                        <label className="btn btn-outline-primary" htmlFor="p1hush">Hush</label>
+                                <div className="accordion mt-3" id="controlAccordion">
+                                    <div className="accordion-item">
+                                        <h2 className="accordion-header">
+                                            <button
+                                                className="accordion-button"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne"
+                                            >
+                                                Sound Controls
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" className="accordion-collapse collapse show">
+                                            <div className="accordion-body d-flex flex-column gap-3">
+
+                                                {/* P1 radio */}
+                                                <div>
+                                                    <label className="form-label me-2 mb-1">P1</label>
+                                                    <div className="btn-group" role="group" aria-label="p1 radio">
+                                                        <input
+                                                            type="radio"
+                                                            className="btn-check"
+                                                            name="p1"
+                                                            id="p1on"
+                                                            checked={controls.p1 === "on"}
+                                                            onChange={() => setControls((c) => ({ ...c, p1: "on" }))}
+                                                        />
+                                                        <label className="btn btn-outline-primary" htmlFor="p1on">On</label>
+
+                                                        <input
+                                                            type="radio"
+                                                            className="btn-check"
+                                                            name="p1"
+                                                            id="p1hush"
+                                                            checked={controls.p1 === "hush"}
+                                                            onChange={() => setControls((c) => ({ ...c, p1: "hush" }))}
+                                                        />
+                                                        <label className="btn btn-outline-primary" htmlFor="p1hush">Hush</label>
+                                                    </div>
+                                                </div>
+
+                                                {/* Tempo */}
+                                                <div className="d-flex align-items-center gap-2">
+                                                    <label htmlFor="tempo" className="form-label mb-0">Tempo</label>
+                                                    <input
+                                                        id="tempo"
+                                                        type="range"
+                                                        className="form-range"
+                                                        min="60" max="180" step="1"
+                                                        value={controls.tempo}
+                                                        onChange={(e) => setControls((c) => ({ ...c, tempo: Number(e.target.value) }))}
+                                                        style={{ width: 200 }}
+                                                    />
+                                                    <span className="badge text-bg-secondary">{controls.tempo} bpm</span>
+                                                </div>
+
+                                                {/* Volume */}
+                                                <div className="d-flex align-items-center gap-2">
+                                                    <label htmlFor="volume" className="form-label mb-0">Volume</label>
+                                                    <input
+                                                        id="volume"
+                                                        type="range"
+                                                        className="form-range"
+                                                        min="0" max="100" step="1"
+                                                        value={controls.volume}
+                                                        onChange={(e) => setControls((c) => ({ ...c, volume: Number(e.target.value) }))}
+                                                        style={{ width: 200 }}
+                                                        aria-label="Master volume"
+                                                    />
+                                                    <span className="badge text-bg-secondary">{controls.volume}</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
-                                {/* Tempo */}
-                                <div className="d-flex align-items-center gap-2">
-                                    <label htmlFor="tempo" className="form-label mb-0">Tempo</label>
-                                    <input
-                                        id="tempo"
-                                        type="range"
-                                        className="form-range"
-                                        min="60" max="180" step="1"
-                                        value={controls.tempo}
-                                        onChange={(e) => setControls((c) => ({ ...c, tempo: Number(e.target.value) }))}
-                                        style={{ width: 200 }}
-                                    />
-                                    <span className="badge text-bg-secondary">{controls.tempo} bpm</span>
-                                </div>
-
-                                {/* Volume */}
-                                <div className="d-flex align-items-center gap-2">
-                                    <label htmlFor="volume" className="form-label mb-0">Volume</label>
-                                    <input
-                                        id="volume"
-                                        type="range"
-                                        className="form-range"
-                                        min="0" max="100" step="1"
-                                        value={controls.volume}
-                                        onChange={(e) => setControls((c) => ({ ...c, volume: Number(e.target.value) }))}
-                                        style={{ width: 200 }}
-                                        aria-label="Master volume"
-                                    />
-                                    <span className="badge text-bg-secondary">{controls.volume}</span>
-                                </div>
-
-                                <div className="form-check form-switch ms-auto">
+                                {/* Auto Proc & Play Switch */}
+                                <div className="form-check form-switch ms-auto mt-3">
                                     <input
                                         className="form-check-input"
                                         type="checkbox"
@@ -155,6 +177,7 @@ export default function Dashboard() {
 
                             </div>
                         </div>
+
                     </div>
 
                     {/* Strudel output */}
