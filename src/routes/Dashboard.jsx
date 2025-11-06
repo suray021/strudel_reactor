@@ -1,4 +1,4 @@
-import './App.css';
+import '../App.css';
 import { useEffect, useRef } from "react";
 import { StrudelMirror } from '@strudel/codemirror';
 import { evalScope } from '@strudel/core';
