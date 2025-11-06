@@ -80,6 +80,11 @@ export default function Dashboard() {
                             </div>
                         </div>
 
+                        {/* Playback Status */}
+                        <div className="alert alert-info mt-3 py-2 text-center" role="alert">
+                            Now Playing: updated Strudel sequence {autoPlay ? "(Auto Mode)" : "(Manual Mode)"}
+                        </div>
+
                         <div className="card mt-3">
                             <div className="card-header">Controls</div>
                             <div className="card-body">
