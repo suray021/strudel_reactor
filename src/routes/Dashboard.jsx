@@ -8,6 +8,7 @@ import { preprocess } from "../lib/preprocess";
 export default function Dashboard() {
     const [controls, setControls] = useState({ p1: "on", tempo: 120, volume: 70 });
     const [editorText, setEditorText] = useState("");
+    const [autoPlay, setAutoPlay] = useState(true);
 
     const { editorDivRef, canvasRef, setCode, play, stop, isReady } = useStrudel();
 
@@ -19,11 +20,24 @@ export default function Dashboard() {
     const processed = useMemo(() => preprocess(editorText, controls), [editorText, controls]);
 
     useEffect(() => {
-        if (isReady()) setCode(processed);
-    }, [processed, isReady, setCode]);
+        if (!isReady()) return;
 
-    const proc = () => isReady() && setCode(processed);
-    const procAndPlay = () => { if (!isReady()) return; setCode(processed); play(); };
+        if (processed && processed.trim().length > 0) {
+            setCode(processed);
+            if (autoPlay) play();
+        }
+    }, [processed, autoPlay, isReady, setCode, play]);
+
+    const proc = () => {
+        if (!isReady() || !processed || !processed.trim()) return;
+        setCode(processed);
+    };
+
+    const procAndPlay = () => {
+        if (!isReady() || !processed || !processed.trim()) return;
+        setCode(processed);
+        play();
+    };
 
     return (
         <div>
@@ -113,6 +127,20 @@ export default function Dashboard() {
                                     />
                                     <span className="badge text-bg-secondary">{controls.volume}</span>
                                 </div>
+
+                                <div className="form-check form-switch ms-auto">
+                                    <input
+                                        className="form-check-input"
+                                        type="checkbox"
+                                        id="autoPlaySwitch"
+                                        checked={autoPlay}
+                                        onChange={(e) => setAutoPlay(e.target.checked)}
+                                    />
+                                    <label className="form-check-label" htmlFor="autoPlaySwitch">
+                                        Auto Proc & Play
+                                    </label>
+                                </div>
+
                             </div>
                         </div>
                     </div>
