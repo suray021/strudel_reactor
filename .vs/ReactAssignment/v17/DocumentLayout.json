@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "src\\App.jsx",
               "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\src\\App.jsx",
               "RelativeToolTip": "src\\App.jsx",
-              "ViewState": "AgIAABEAAAAAAAAAAAAYwCsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-11-07T01:22:18.801Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "src\\routes\\Home.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-11-07T01:15:43.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T01:15:43.961Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "src\\routes\\Dashboard.jsx",
               "ViewState": "AgIAAK4AAAAAAAAAAAAYwMgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-11-06T21:44:52.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T21:44:52.012Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "src\\routes\\Settings.jsx",
               "ViewState": "AgIAAAwAAAAAAAAAAAAYwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-11-06T22:03:45.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T22:03:45.402Z"
             }
           ]
         }
