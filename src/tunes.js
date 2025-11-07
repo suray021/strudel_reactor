@@ -39,6 +39,7 @@ const arpeggiator2 = [
 const pattern = 0
 const bass = 0
 
+
 bassline:
 n(pick(basslines, bass))
 .sound("supersaw")
