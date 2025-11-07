@@ -1,47 +1,171 @@
-
-html, body {
-    height: 100%;
+:root{
+  --bg-grad-1:#0f172a;      
+  --bg-grad-2:#111827;     
+  --card:#0b1220;           
+  --card-soft:#0e1729;
+  --text:#e5e7eb;           
+  --muted:#9ca3af;          
+  --accent:#7c3aed;         
+  --accent-2:#06b6d4;       
+  --accent-soft:#1f1441;
+  --success:#10b981;
+  --danger:#ef4444;
+  --shadow:0 10px 24px rgba(0,0,0,.35);
 }
 
-body {
-    background: radial-gradient(1200px 600px at 10% -20%, #f8f9fa 0%, transparent 60%), radial-gradient(900px 500px at 110% -10%, #f3f4f6 0%, transparent 60%), #ffffff;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+/* page background */
+html,body,#root{
+  height:100%;
+  background: radial-gradient(1200px 800px at 10% -10%, rgba(124,58,237,.20), transparent 60%),
+              radial-gradient(1200px 800px at 110% -10%, rgba(6,182,212,.18), transparent 60%),
+              linear-gradient(160deg,var(--bg-grad-1),var(--bg-grad-2));
+  color:var(--text);
 }
 
-/* Brand */
-.brand-mark {
-    filter: drop-shadow(0 1px 0 rgba(0,0,0,.15));
+/* navbar */
+.navbar{
+  background: linear-gradient(90deg, var(--accent) , var(--accent-2)) !important;
+  box-shadow: var(--shadow);
+}
+.navbar .navbar-brand, .navbar .nav-link{ color:white !important; opacity:.95;}
+.navbar .nav-link:hover,.navbar .navbar-brand:hover{ opacity:1; text-decoration:underline; text-underline-offset:4px;}
+
+/* cards */
+.card{
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,.06);
+  box-shadow: var(--shadow);
+  color: var(--text);
+}
+.card .card-header{
+  background: linear-gradient(180deg, rgba(124,58,237,.25), rgba(124,58,237,.05));
+  border-bottom:1px solid rgba(255,255,255,.06);
+  color: #f5f3ff; /* violet-50 */
+  font-weight:600;
 }
 
-
-.navbar .nav-link {
-    position: relative;
-    transition: color .15s ease;
+/* alert */
+.alert-info{
+  background: linear-gradient(90deg, rgba(6,182,212,.15), rgba(124,58,237,.15));
+  border:1px solid rgba(255,255,255,.08);
+  color: var(--text);
 }
 
-    .navbar .nav-link:hover {
-        color: #ffffff;
-    }
-
-    .navbar .nav-link.active::after {
-        content: "";
-        position: absolute;
-        left: 1rem;
-        right: 1rem;
-        bottom: -8px;
-        height: 2px;
-        border-radius: 2px;
-        background: rgba(255,255,255,.85);
-    }
-
-/* Content card spacing on small screens */
-.content-card {
-    backdrop-filter: saturate(1.1);
+/* buttons */
+.btn{
+  border-radius: 10px;
+  border:1px solid rgba(255,255,255,.12);
+  transition: transform .08s ease, box-shadow .2s ease;
+}
+.btn-outline-primary{
+  color:#c7d2fe;
+  border-color: rgba(124,58,237,.55);
+}
+.btn-outline-primary:hover{
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border-color: transparent;
+  color:white;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(124,58,237,.35);
+}
+.btn-primary{
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border: none;
 }
 
-/* Footer */
-footer {
-    background: rgba(255, 255, 255, .7);
+/* accordion */
+.accordion-button{
+  background: linear-gradient(180deg, rgba(124,58,237,.18), rgba(124,58,237,.06));
+  color: var(--text);
+}
+.accordion-button:not(.collapsed){
+  color:white; 
+  background: linear-gradient(180deg, rgba(124,58,237,.32), rgba(124,58,237,.10));
+  box-shadow:none;
 }
 
+/* textarea + editor area */
+textarea.form-control{
+  background: var(--card-soft);
+  color: var(--text);
+  border:1px solid rgba(255,255,255,.08);
+}
+textarea.form-control:focus{
+  background: var(--card-soft);
+  color: var(--text);
+  border-color: rgba(124,58,237,.6);
+  box-shadow: 0 0 0 0.2rem rgba(124,58,237,.25);
+}
+
+/* badges (tempo readout, etc.) */
+.badge{
+  background: rgba(255,255,255,.12) !important;
+  color:#e5e7eb;
+}
+
+/* range sliders */
+.form-range{
+  --track:#2a3347;
+  --fill: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+.form-range::-webkit-slider-runnable-track{
+  height: .5rem; border-radius:999px; background: var(--track);
+}
+.form-range::-moz-range-track{
+  height: .5rem; border-radius:999px; background: var(--track);
+}
+.form-range::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 1.1rem; width: 1.1rem; margin-top:-.3rem;
+  border-radius:50%; background: white;
+  border:2px solid var(--accent);
+  box-shadow: 0 0 0 6px rgba(124,58,237,.25);
+}
+.form-range::-moz-range-thumb{
+  height: 1.1rem; width: 1.1rem; border-radius:50%;
+  background:white; border:2px solid var(--accent);
+  box-shadow: 0 0 0 6px rgba(124,58,237,.25);
+}
+.form-range:focus{
+  outline:none;
+}
+.form-range:focus::-webkit-slider-runnable-track{
+  background: linear-gradient(90deg, rgba(124,58,237,.35), rgba(6,182,212,.35));
+}
+
+/* canvas piano roll */
+#roll{
+  width:100%; height:240px; background:#0a0f1b; border:1px solid rgba(255,255,255,.06); border-radius:12px;
+}
+
+/* small helpers */
+.text-muted{ color: var(--muted) !important; }
+.mt-2px{ margin-top:2px; }
+
+/* Make card headers (like Transport, Controls) readable and stylish */
+.card-header,
+.card > .card-header,
+.accordion-button {
+    color: #1a1a1a !important; /* dark gray text */
+    font-weight: 600; /* bold */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* subtle shadow for visibility */
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Give Transport and Controls cards a nice gradient background */
+.card-header {
+    background: linear-gradient(to right, #d1c4e9, #b39ddb);
+    border-bottom: none;
+    color: #222; /* ensure text contrast */
+}
+
+/* A hover effect for the buttons */
+.btn-outline-primary:hover {
+    background: linear-gradient(to right, #64b5f6, #1976d2);
+    color: white;
+    border: none;
+}
