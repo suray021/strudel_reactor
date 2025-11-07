@@ -14,7 +14,7 @@ export default function Dashboard() {
 
     useEffect(() => {
         console_monkey_patch();
-        setEditorText(`<volume>\n"bd sn" ~ "hh*8" @ <tempo>\n<p1_Radio> "cp*4"\n\n` + stranger_tune);
+        setEditorText(`all(x => x.postgain(<VOLUME>)) \n\n` + stranger_tune);
     }, []);
 
     const processed = useMemo(() => preprocess(editorText, controls), [editorText, controls]);
