@@ -9,8 +9,12 @@ function uiToGain(vol) {
 export function preprocess(source, controls) {
     let out = source ?? "";
 
-    // p1 radio
-    out = out.replaceAll("<p1_Radio>", controls.p1 === "hush" ? "_" : "");
+    // P1: ON = play pattern, HUSH = silence
+    if (controls.p1 === "hush") {
+        out = out.replaceAll("<p1_Radio>", "~");     // Strudel silence
+    } else {
+        out = out.replaceAll("<p1_Radio>", "cp*4");  // a loud clap pattern
+    }
 
     // tempo
     const tempo = typeof controls.tempo === "number" ? controls.tempo : 120;

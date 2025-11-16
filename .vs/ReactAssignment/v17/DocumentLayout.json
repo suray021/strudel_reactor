@@ -1,21 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\",
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Downloads\\strudel_reactor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\dell\\onedrive\\desktop\\strudel_reactor\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\dell\\onedrive\\desktop\\strudel_reactor\\src\\routes\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\dell\\downloads\\strudel_reactor\\src\\routes\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\routes\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\dell\\onedrive\\desktop\\strudel_reactor\\src\\routes\\settings.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\dell\\downloads\\strudel_reactor\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\dell\\downloads\\strudel_reactor\\src\\lib\\preprocess.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\lib\\preprocess.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\dell\\downloads\\strudel_reactor\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\dell\\downloads\\strudel_reactor\\src\\routes\\settings.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\routes\\settings.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\dell\\onedrive\\desktop\\strudel_reactor\\src\\routes\\dashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\dell\\downloads\\strudel_reactor\\src\\routes\\dashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\routes\\dashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
@@ -26,40 +34,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "preprocess.js",
+              "DocumentMoniker": "C:\\Users\\DELL\\Downloads\\strudel_reactor\\src\\lib\\preprocess.js",
+              "RelativeDocumentMoniker": "src\\lib\\preprocess.js",
+              "ToolTip": "C:\\Users\\DELL\\Downloads\\strudel_reactor\\src\\lib\\preprocess.js",
+              "RelativeToolTip": "src\\lib\\preprocess.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-16T06:28:32.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\DELL\\Downloads\\strudel_reactor\\src\\App.css",
+              "RelativeDocumentMoniker": "src\\App.css",
+              "ToolTip": "C:\\Users\\DELL\\Downloads\\strudel_reactor\\src\\App.css",
+              "RelativeToolTip": "src\\App.css",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-07T07:56:56.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "App.jsx",
-              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\src\\App.jsx",
+              "DocumentMoniker": "C:\\Users\\DELL\\Downloads\\strudel_reactor\\src\\App.jsx",
               "RelativeDocumentMoniker": "src\\App.jsx",
-              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\DELL\\Downloads\\strudel_reactor\\src\\App.jsx",
               "RelativeToolTip": "src\\App.jsx",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAABQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-11-07T01:22:18.801Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Home.jsx",
-              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\src\\routes\\Home.jsx",
+              "DocumentMoniker": "C:\\Users\\DELL\\Downloads\\strudel_reactor\\src\\routes\\Home.jsx",
               "RelativeDocumentMoniker": "src\\routes\\Home.jsx",
-              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\src\\routes\\Home.jsx",
+              "ToolTip": "C:\\Users\\DELL\\Downloads\\strudel_reactor\\src\\routes\\Home.jsx",
               "RelativeToolTip": "src\\routes\\Home.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-11-07T01:15:43.961Z"
+              "WhenOpened": "2025-11-07T01:15:43.961Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Dashboard.jsx",
-              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\src\\routes\\Dashboard.jsx",
+              "DocumentMoniker": "C:\\Users\\DELL\\Downloads\\strudel_reactor\\src\\routes\\Dashboard.jsx",
               "RelativeDocumentMoniker": "src\\routes\\Dashboard.jsx",
-              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\src\\routes\\Dashboard.jsx",
+              "ToolTip": "C:\\Users\\DELL\\Downloads\\strudel_reactor\\src\\routes\\Dashboard.jsx",
               "RelativeToolTip": "src\\routes\\Dashboard.jsx",
               "ViewState": "AgIAAK4AAAAAAAAAAAAYwMgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
@@ -67,11 +102,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Settings.jsx",
-              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\src\\routes\\Settings.jsx",
+              "DocumentMoniker": "C:\\Users\\DELL\\Downloads\\strudel_reactor\\src\\routes\\Settings.jsx",
               "RelativeDocumentMoniker": "src\\routes\\Settings.jsx",
-              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\src\\routes\\Settings.jsx",
+              "ToolTip": "C:\\Users\\DELL\\Downloads\\strudel_reactor\\src\\routes\\Settings.jsx",
               "RelativeToolTip": "src\\routes\\Settings.jsx",
               "ViewState": "AgIAAAwAAAAAAAAAAAAYwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
