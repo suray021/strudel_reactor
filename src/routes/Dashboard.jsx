@@ -8,7 +8,7 @@ import { preprocess } from "../lib/preprocess";
 export default function Dashboard() {
     const [controls, setControls] = useState({ p1: "on", tempo: 120, volume: 70 });
     const [editorText, setEditorText] = useState("");
-    const [autoPlay, setAutoPlay] = useState(true);
+    const [autoPlay, setAutoPlay] = useState(false);
 
     const { editorDivRef, canvasRef, setCode, play, stop, isReady } = useStrudel();
 
