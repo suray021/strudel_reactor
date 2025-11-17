@@ -170,7 +170,15 @@ export default function Dashboard() {
                                                     Chill Mode
                                                 </button>
 
-                                               
+                                                <button
+                                                    className="btn btn-outline-danger"
+                                                    onClick={() =>
+                                                        setControls({ p1: "on", tempo: 150, volume: 90 })
+                                                    }
+                                                >
+                                                    Dance Mode
+                                                </button>
+
                                             </div>
                                         </div>
                                     </div>
