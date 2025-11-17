@@ -161,6 +161,16 @@ export default function Dashboard() {
                                                     <span className="badge text-bg-secondary">{controls.volume}</span>
                                                 </div>
 
+                                                <button
+                                                    className="btn btn-outline-primary"
+                                                    onClick={() =>
+                                                        setControls({ p1: "hush", tempo: 70, volume: 20 })
+                                                    }
+                                                >
+                                                    Chill Mode
+                                                </button>
+
+                                               
                                             </div>
                                         </div>
                                     </div>
