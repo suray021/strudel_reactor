@@ -94,9 +94,17 @@ stack(
   .speed(0.5)
   .rarely(jux(rev)),
 
-  all(x => x.postgain(<VOLUME>))
-
 )
+
+
+p1_layer:
+s(<p1_Radio>)
+.bank("RolandTR808")
+.gain(1.5)
+.room(0.3)
+
+all(x => x.postgain(<VOLUME>))
+
 //Remixed and reproduced from Algorave Dave's code found here: https://www.youtube.com/watch?v=ZCcpWzhekEY
 // all(x => x.gain(mouseX.range(0,1)))
 // all(x => x.log())
