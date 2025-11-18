@@ -1,3 +1,4 @@
+import D3Graph from "../components/D3Graph";
 import "../App.css";
 import { useEffect, useMemo, useState } from "react";
 import { stranger_tune } from "../tunes";
@@ -203,14 +204,27 @@ export default function Dashboard() {
 
                     </div>
 
-                    {/* Strudel output */}
+                    {/* Strudel output + visualisers */}
                     <div className="col-md-8">
                         <div id="editor" ref={editorDivRef} />
                         <div id="output" />
                     </div>
+
                     <div className="col-md-4">
-                        <canvas id="roll" ref={canvasRef} />
+
+                        {/* Piano Roll */}
+                        <div className="visualizer-wrapper">
+                            <div className="visualizer-grid">
+                                <canvas id="roll" ref={canvasRef} className="visualizer-canvas" />
+                            </div>
+                        </div>
+
+                        {/* D3 Graph */}
+                        <D3Graph />
+
                     </div>
+
+
                 </div>
             </main>
         </div>
