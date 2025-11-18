@@ -94,7 +94,7 @@ stack(
   .speed(0.5)
   .rarely(jux(rev)),
 
-  all(x => x.postgain(<VOLUME>))
+all(x => x.postgain(<VOLUME>))
 
 )
 //Remixed and reproduced from Algorave Dave's code found here: https://www.youtube.com/watch?v=ZCcpWzhekEY
