@@ -139,12 +139,22 @@ textarea.form-control:focus{
 }*/
 
 #roll {
-    width:100%; 
-    height:240px;
-    background: radial-gradient(circle at center, #0f0f1a, #05050a);
-    border: 2px solid rgba(0, 255, 200, 0.4);
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 255, 200, 0.3), inset 0 0 10px rgba(0, 255, 200, 0.2);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+
+@keyframes gridmove {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-40px);
+    }
 }
 
 #editor {
