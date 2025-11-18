@@ -9,12 +9,8 @@ function uiToGain(vol) {
 export function preprocess(source, controls) {
     let out = source ?? "";
 
-    // P1: ON = play pattern, HUSH = silence
-    if (controls.p1 === "hush") {
-        out = out.replaceAll("<p1_Radio>", "~");     // Strudel silence
-    } else {
-        out = out.replaceAll("<p1_Radio>", "cp*4");  // a loud clap pattern
-    }
+    // p1 radio
+    out = out.replaceAll("<p1_Radio>", controls.p1 === "hush" ? "_" : "");
 
     // tempo
     const tempo = typeof controls.tempo === "number" ? controls.tempo : 120;
@@ -28,7 +24,6 @@ export function preprocess(source, controls) {
         out = out.replaceAll("<VOLUME>", String(volNum));
 
         // Backward compatibility: if someone still uses <volume>, turn it into a master line.
-        // (You can remove this block once you've fully moved to <VOLUME>.)
         if (out.includes("<volume>")) {
             out = out.replaceAll("<volume>", `all(x => x.postgain(${volNum}))`);
         }
