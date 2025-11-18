@@ -213,11 +213,11 @@ export default function Dashboard() {
                     <div className="col-md-4">
 
                         {/* Piano Roll */}
-                        <div className="visualizer-wrapper">
-                            <div className="visualizer-grid">
-                                <canvas id="roll" ref={canvasRef} className="visualizer-canvas" />
-                            </div>
+                        
+                        <div className="visualizer-grid">
+                            <canvas id="roll" ref={canvasRef} className="visualizer-canvas" />
                         </div>
+                        
 
                         {/* D3 Graph */}
                         <D3Graph />
