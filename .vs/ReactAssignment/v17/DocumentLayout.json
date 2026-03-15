@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\dell\\onedrive\\desktop\\strudel_reactor\\reactassignment.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:reactassignment.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\dell\\onedrive\\desktop\\strudel_reactor\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -38,11 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "ReactAssignment",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\ReactAssignment.esproj",
+              "RelativeDocumentMoniker": "ReactAssignment.esproj",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\ReactAssignment.esproj",
+              "RelativeToolTip": "ReactAssignment.esproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-18T12:34:32.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "tunes.js",
               "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\src\\tunes.js",
               "RelativeDocumentMoniker": "src\\tunes.js",
@@ -50,12 +67,11 @@
               "RelativeToolTip": "src\\tunes.js",
               "ViewState": "AgIAAD8AAAAAAAAAAAAUwF0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-17T03:40:40.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T03:40:40.55Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "preprocess.js",
               "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\src\\lib\\preprocess.js",
               "RelativeDocumentMoniker": "src\\lib\\preprocess.js",
@@ -80,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "App.jsx",
               "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\src\\App.jsx",
               "RelativeDocumentMoniker": "src\\App.jsx",
@@ -88,12 +104,11 @@
               "RelativeToolTip": "src\\App.jsx",
               "ViewState": "AgIAADkAAAAAAAAAAAAAABsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-11-07T01:22:18.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T01:22:18.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Home.jsx",
               "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\src\\routes\\Home.jsx",
               "RelativeDocumentMoniker": "src\\routes\\Home.jsx",
@@ -111,14 +126,14 @@
               "RelativeDocumentMoniker": "src\\routes\\Dashboard.jsx",
               "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\src\\routes\\Dashboard.jsx",
               "RelativeToolTip": "src\\routes\\Dashboard.jsx",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAAAOQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-11-06T21:44:52.012Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Settings.jsx",
               "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\strudel_reactor\\src\\routes\\Settings.jsx",
               "RelativeDocumentMoniker": "src\\routes\\Settings.jsx",

@@ -214,8 +214,10 @@ export default function Dashboard() {
 
                         {/* Piano Roll */}
                         
-                        <div className="visualizer-grid">
-                            <canvas id="roll" ref={canvasRef} className="visualizer-canvas" />
+                        <div className="visualizer-wrapper">
+                            <div className="visualizer-grid">
+                                <canvas id="roll" ref={canvasRef} className="visualizer-canvas" />
+                            </div>
                         </div>
                         
 
